@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    height: 100dvh;
     background-color: rgb(250, 71, 71);
     display: flex;
     justify-content: center;
