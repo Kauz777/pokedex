@@ -12,7 +12,7 @@ body {
 
 #home {
     background-color: rgb(253, 108, 108);
-    width: 400px;
+    width: 200px;
     padding: 20px;
     border-radius: 120px;
 
@@ -46,7 +46,7 @@ body {
 
 /* Alterado de ID para classe/tag para herdar o tamanho do container */
 #dex-img {
-    width: 300%;
+    width: 100%;
     display: block;
     border-radius: 50px;
 }
