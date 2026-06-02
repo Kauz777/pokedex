@@ -8,14 +8,19 @@
 </head>
 <body>
     <div id="home">
-    <h1>Pokédex Brasil</h1>
+        <h1>Pokédex Brasil</h1>
 
-    <img src="./img/dex.png" id="dex-img">
+        <div class="pokedex-container">
+            <img src="./img/dex.png" id="dex-img">
+            <div id="resultado-pokemon"></div>
+        </div>
 
-    <div class="search">
-        <input type="text" id="pokemon-input" placeholder="Pokémon">
-        <button onclick="buscarPokemon()">Buscar</button>
+        <div class="search">
+            <input type="text" id="pokemon-input" placeholder="Ex: charizard-mega-x">
+            <button onclick="buscarpokemon()">Buscar</button>
+        </div>
     </div>
-</div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
