@@ -42,3 +42,76 @@ body {
     border-radius: 8px;
     cursor: pointer;
 }
+
+.pokedex-container {
+    position: relative; /* Isso cria a "âncora" para o posicionamento absoluto */
+    width: 600px;       /* Mesma largura que você definiu para a imagem */
+    height: auto;
+}
+
+#dex-img {
+    width: 300%;
+    display: block;
+    border-radius: 50px;
+    }
+    
+#resultado-pokemon {
+    position: absolute;
+    
+    /* Aumentei de 45% para 55% para descer mais o Pokémon */
+    top: 75%;    
+    left: 50%;   
+    transform: translate(-50%, -50%); /* Mantém centralizado enquanto desce */
+    
+    text-align: center;
+    width: 70%;  
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do Nome do Pokémon dentro da tela da Pokédex */
+#resultado-pokemon h2 {
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+    color: #000; /* Defina a cor que contraste melhor com a tela do seu desenho */
+}
+
+/* Estilo da Foto do Pokémon dentro da tela da Pokédex */
+.pokemon-foto {
+    max-width: 90px; /* Ajuste se o Pokémon ficar muito grande ou pequeno na tela */
+    height: auto;
+}
+
+/* ======================================================== */
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.search input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+
+.search button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #fff;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.search button:hover {
+    background-color: #e0e0e0;
+}
+
