@@ -12,7 +12,7 @@ body {
 
 #home {
     background-color: rgb(253, 108, 108);
-    width: 800px;
+    width: 400px;
     padding: 20px;
     border-radius: 120px;
 
@@ -40,7 +40,7 @@ body {
    ======================================================== */
 .pokedex-container {
     position: relative; /* Isso cria a "âncora" para o posicionamento absoluto */
-    width: 600px;       /* Mesma largura que você definiu para a imagem */
+    width: 300px;       /* Mesma largura que você definiu para a imagem */
     height: auto;
 }
 
