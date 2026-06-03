@@ -42,7 +42,25 @@ async function buscarpokemon() {
             imagemUrl = dadosPokemon.sprites.other['official-artwork'].front_default;
         }
 
-        
+        // Define os cenários oficiais de fundo baseados no tipo do Pokémon
+        const tipo = dadosPokemon.types[0].type.name;
+        const cenarios = {
+            grass: 'https://i.imgur.com/P4E23uG.png',
+            bug: 'https://i.imgur.com/P4E23uG.png',
+            normal: 'https://i.imgur.com/P4E23uG.png',
+            fire: 'https://i.imgur.com/8QZp8Xg.png',
+            dragon: 'https://i.imgur.com/8QZp8Xg.png',
+            water: 'https://i.imgur.com/KdfX8wX.png',
+            ice: 'https://i.imgur.com/KdfX8wX.png',
+            electric: 'https://i.imgur.com/Jd0gWOn.png',
+            rock: 'https://i.imgur.com/bK68wsc.png',
+            ground: 'https://i.imgur.com/bK68wsc.png',
+            ghost: 'https://i.imgur.com/W2o7TfM.png',
+            psychic: 'https://i.imgur.com/W2o7TfM.png',
+            dark: 'https://i.imgur.com/W2o7TfM.png',
+            poison: 'https://i.imgur.com/W2o7TfM.png'
+        };
+
         const imagemFundo = cenarios[tipo] || 'https://i.imgur.com/P4E23uG.png';
 
         // Aplica o cenário na tela de exibição
