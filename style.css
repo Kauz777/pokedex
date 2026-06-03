@@ -52,18 +52,19 @@ body {
     transform: translate(-50%, -50%); 
     text-align: center;
     width: 70%;  
-    
-    /* Configurações para comportar perfeitamente o background dinâmico do Pokémon */
     height: 45%; 
     border-radius: 15px;
     overflow: hidden;
+    
+    /* Garante que o fundo seja invisível para mostrar o seu Photoshop */
+    background-color: transparent; 
+    background-image: none !important; 
     
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-
 .pokemon-foto {
     max-width: 90px; 
     height: auto;
