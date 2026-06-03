@@ -1,16 +1,20 @@
 body {
-    height: 100dvh;
-    background-color: rgb(250, 71, 71);
+    /* O dvh se adapta dinamicamente quando a barra do celular aparece ou some */
+    height: 100dvh; 
+    
+    background-color: rgb(224, 101, 101);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
+    margin: 0;
 }
 
 #home {
-    background-color: rgb(255, 115, 115);
+    background-color: rgb(253, 108, 108);
     width: 400px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 120px;
 
     display: flex;
     flex-direction: column;
@@ -18,43 +22,38 @@ body {
     gap: 15px;
 }
 
-#dex-img {
-    width: 250px;
+#home h1 {
+    font-family: 'Press Start 2P', monospace; /* Aplica a fonte Pixel Art */
+    font-size: 3.1rem;      /* Tamanho ajustado para fontes pixeladas */
+    color: #ffcb05;         /* Amarelo clássico do logo do Pokémon */
+    text-shadow: 
+        2px 2px 0px #3b4cca, /* Sombra azul clássica do logo */
+        -1px -1px 0px #3b4cca,
+        1px -1px 0px #3b4cca,
+        -1px 1px 0px #3b4cca;
+    text-align: center;
+    margin: 10px 0;
+    letter-spacing: -1px;   /* Junta um pouquinho as letras para dar estilo */
 }
-
-.search {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.search input {
-    padding: 8px;
-    width: 200px;
-    border-radius: 8px;
-    border: none;
-}
-
-.search button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
+/* ========================================================
+   NOVO: Container que junta a Imagem da Pokédex e o Pokémon
+   ======================================================== */
 .pokedex-container {
     position: relative; /* Isso cria a "âncora" para o posicionamento absoluto */
-    width: 600px;       /* Mesma largura que você definiu para a imagem */
+    width: 300px;       /* Mesma largura que você definiu para a imagem */
     height: auto;
 }
 
+/* Alterado de ID para classe/tag para herdar o tamanho do container */
 #dex-img {
-    width: 300%;
+    width: 100%;
     display: block;
     border-radius: 50px;
-    }
-    
+}
+
+/* ========================================================
+   NOVO: Caixa onde o JavaScript joga o Pokémon (Fica por cima)
+   ======================================================== */
 #resultado-pokemon {
     position: absolute;
     
@@ -114,4 +113,3 @@ body {
 .search button:hover {
     background-color: #e0e0e0;
 }
-
