@@ -44,24 +44,26 @@ async function buscarpokemon() {
 
         // Define os cenários oficiais de fundo baseados no tipo do Pokémon
         const tipo = dadosPokemon.types[0].type.name;
+        
+        // LINKS ATUALIZADOS E SEGUROS (Sem bloqueio do Imgur)
         const cenarios = {
-            grass: 'https://i.imgur.com/P4E23uG.png',
-            bug: 'https://i.imgur.com/P4E23uG.png',
-            normal: 'https://i.imgur.com/P4E23uG.png',
-            fire: 'https://i.imgur.com/8QZp8Xg.png',
-            dragon: 'https://i.imgur.com/8QZp8Xg.png',
-            water: 'https://i.imgur.com/KdfX8wX.png',
-            ice: 'https://i.imgur.com/KdfX8wX.png',
-            electric: 'https://i.imgur.com/Jd0gWOn.png',
-            rock: 'https://i.imgur.com/bK68wsc.png',
-            ground: 'https://i.imgur.com/bK68wsc.png',
-            ghost: 'https://i.imgur.com/W2o7TfM.png',
-            psychic: 'https://i.imgur.com/W2o7TfM.png',
-            dark: 'https://i.imgur.com/W2o7TfM.png',
-            poison: 'https://i.imgur.com/W2o7TfM.png'
+            grass: 'https://play.pokemonshowdown.com/fx/bg-field-day.jpg',
+            bug: 'https://play.pokemonshowdown.com/fx/bg-field-day.jpg',
+            normal: 'https://play.pokemonshowdown.com/fx/bg-field-day.jpg',
+            fire: 'https://play.pokemonshowdown.com/fx/bg-volcano.jpg',
+            dragon: 'https://play.pokemonshowdown.com/fx/bg-volcano.jpg',
+            water: 'https://play.pokemonshowdown.com/fx/bg-water.jpg',
+            ice: 'https://play.pokemonshowdown.com/fx/bg-water.jpg',
+            electric: 'https://play.pokemonshowdown.com/fx/bg-thunderstorm.jpg',
+            rock: 'https://play.pokemonshowdown.com/fx/bg-cave.jpg',
+            ground: 'https://play.pokemonshowdown.com/fx/bg-cave.jpg',
+            ghost: 'https://play.pokemonshowdown.com/fx/bg-dark.jpg',
+            psychic: 'https://play.pokemonshowdown.com/fx/bg-dark.jpg',
+            dark: 'https://play.pokemonshowdown.com/fx/bg-dark.jpg',
+            poison: 'https://play.pokemonshowdown.com/fx/bg-dark.jpg'
         };
 
-        const imagemFundo = cenarios[tipo] || 'https://i.imgur.com/P4E23uG.png';
+        const imagemFundo = cenarios[tipo] || 'https://play.pokemonshowdown.com/fx/bg-field-day.jpg';
 
         // Aplica o cenário na tela de exibição
         resultadoDiv.style.backgroundImage = `url('${imagemFundo}')`;
