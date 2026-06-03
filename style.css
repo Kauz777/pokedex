@@ -1,7 +1,5 @@
 body {
-    /* O dvh se adapta dinamicamente quando a barra do celular aparece ou some */
     height: 100dvh; 
-    
     background-color: rgb(224, 101, 101);
     display: flex;
     justify-content: center;
@@ -15,7 +13,6 @@ body {
     width: 400px;
     padding: 20px;
     border-radius: 120px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,67 +20,55 @@ body {
 }
 
 #home h1 {
-    font-family: 'Press Start 2P', monospace; /* Aplica a fonte Pixel Art */
-    font-size: 3.1rem;      /* Tamanho ajustado para fontes pixeladas */
-    color: #ffcb05;         /* Amarelo clássico do logo do Pokémon */
+    font-family: 'Press Start 2P', monospace; 
+    font-size: 1.1rem; /* Corrigido de 3.1rem para 1.1rem para caber no layout */
+    color: #ffcb05;         
     text-shadow: 
-        2px 2px 0px #3b4cca, /* Sombra azul clássica do logo */
+        2px 2px 0px #3b4cca, 
         -1px -1px 0px #3b4cca,
         1px -1px 0px #3b4cca,
         -1px 1px 0px #3b4cca;
     text-align: center;
     margin: 10px 0;
-    letter-spacing: -1px;   /* Junta um pouquinho as letras para dar estilo */
+    letter-spacing: -1px;   
 }
-/* ========================================================
-   NOVO: Container que junta a Imagem da Pokédex e o Pokémon
-   ======================================================== */
+
 .pokedex-container {
-    position: relative; /* Isso cria a "âncora" para o posicionamento absoluto */
-    width: 300px;       /* Mesma largura que você definiu para a imagem */
+    position: relative; 
+    width: 300px;       
     height: auto;
 }
 
-/* Alterado de ID para classe/tag para herdar o tamanho do container */
 #dex-img {
     width: 100%;
     display: block;
     border-radius: 50px;
 }
 
-/* ========================================================
-   NOVO: Caixa onde o JavaScript joga o Pokémon (Fica por cima)
-   ======================================================== */
 #resultado-pokemon {
     position: absolute;
-    
-    /* Aumentei de 45% para 55% para descer mais o Pokémon */
     top: 75%;    
     left: 50%;   
-    transform: translate(-50%, -50%); /* Mantém centralizado enquanto desce */
-    
+    transform: translate(-50%, -50%); 
     text-align: center;
     width: 70%;  
+    
+    /* Configurações para comportar perfeitamente o background dinâmico do Pokémon */
+    height: 45%; 
+    border-radius: 15px;
+    overflow: hidden;
     
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
-/* Estilo do Nome do Pokémon dentro da tela da Pokédex */
-#resultado-pokemon h2 {
-    font-size: 1rem;
-    margin: 0 0 5px 0;
-    color: #000; /* Defina a cor que contraste melhor com a tela do seu desenho */
-}
-
-/* Estilo da Foto do Pokémon dentro da tela da Pokédex */
 .pokemon-foto {
-    max-width: 90px; /* Ajuste se o Pokémon ficar muito grande ou pequeno na tela */
+    max-width: 90px; 
     height: auto;
+    margin-bottom: 5px;
 }
-
-/* ======================================================== */
 
 .search {
     display: flex;
